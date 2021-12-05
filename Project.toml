@@ -3,6 +3,10 @@ uuid = "6b24e08c-5c15-4c9d-ae3e-ae7edda8f8a3"
 authors = ["Gabriel Birnbaum <gbbinbum@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+Plasma = "d4286570-51d5-4bbe-9c0b-035637fe1a6e"
+
 [compat]
 julia = "1"
 
