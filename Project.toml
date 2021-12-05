@@ -1,0 +1,13 @@
+name = "PlasmaBenchmarks"
+uuid = "6b24e08c-5c15-4c9d-ae3e-ae7edda8f8a3"
+authors = ["Gabriel Birnbaum <gbbinbum@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
