@@ -1,5 +1,8 @@
 module PlasmaBenchmarks
 
+# TODO
+# add PIC benchmarks
+
 @info "compiling Plasma"
 using Plasma
 using BSON
@@ -24,8 +27,8 @@ G = Geometry()
 
 plasma = ElectrostaticPlasma([D_D], G)
 
-sol1 = Plasma.solve(plasma, dim=1, GPU=false, inner_layers=32, time_ub=100.0, strategy=QuadratureTraining()) 
-sol2 = Plasma.solve(plasma, dim=1, GPU=false, inner_layers=32, time_ub=100.0, strategy=StochasticTraining(200)) 
+sol1 = Plasma.solve(plasma, dim=1, GPU=false, inner_layers=32, time_ub=100.0, ub=10.0; strategy=QuadratureTraining()) 
+sol2 = Plasma.solve(plasma, dim=1, GPU=false, inner_layers=32, time_ub=100.0, ub=10.0; strategy=StochasticTraining(200)) 
 
 @save "1d1v_quadrature.bson" sol1
 @save "1d1v_quadrature.bson" sol2
