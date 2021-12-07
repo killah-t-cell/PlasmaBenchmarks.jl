@@ -9,6 +9,7 @@ Plasma = "d4286570-51d5-4bbe-9c0b-035637fe1a6e"
 
 [compat]
 BSON = "0.3"
+Plasma = "0.1"
 julia = "1"
 
 [extras]
