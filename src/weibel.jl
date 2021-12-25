@@ -32,4 +32,4 @@ sol = Plasma.solve(plasma, dim=3, GPU=false, time_ub = 50.0, ub=2*π)
 
 @save "weibel.bson" sol
 
-Plasma.plot(sol)
+Plasma.plot(sol, 0.01)

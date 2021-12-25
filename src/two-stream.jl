@@ -29,4 +29,4 @@ sol = Plasma.solve(plasma, dim=1, GPU=false, time_ub = 100.0, ub=2.0)
 
 @save "two_stream.bson" sol
 
-Plasma.plot(sol)
+Plasma.plot(sol, 0.01)
