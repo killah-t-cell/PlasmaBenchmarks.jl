@@ -1,7 +1,7 @@
 module PlasmaBenchmarks
 
 using Plasma
-using BSON
+using BSON: @save
 
 include("two-stream.jl")
 include("weibel.jl")
